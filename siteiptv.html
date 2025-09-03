@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StreamMax - IPTV & Streaming</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white">
+
+  <!-- Header -->
+  <header class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <!-- Ícone TV -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <rect x="2" y="7" width="20" height="15" rx="2" ry="2"/>
+          <line x1="8" y1="2" x2="16" y2="2"/>
+          <line x1="12" y1="2" x2="12" y2="7"/>
+        </svg>
+        <span class="text-2xl font-bold text-white">StreamMax</span>
+      </div>
+      <button onclick="handleWhatsAppContact()" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded flex items-center">
+        <!-- Ícone WhatsApp -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M21.6 12.1c0-5.3-4.3-9.6-9.6-9.6S2.4 6.8 2.4 12.1c0 1.7.5 3.4 1.4 4.8L2 22l5.2-1.7c1.4.9 3.1 1.4 4.8 1.4 5.3 0 9.6-4.3 9.6-9.6z"/>
+        </svg>
+        Contato
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1601944179066-29786cb9d32a');">
+      <div class="absolute inset-0 bg-black/70"></div>
+    </div>
+
+    <div class="relative z-10 container mx-auto px-4 text-center">
+      <span class="mb-6 inline-block bg-red-600 text-white px-4 py-1 rounded">🔥 Oferta Especial - Economize até 50%</span>
+      
+      <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        Todos os Canais e <span class="text-red-500">Streaming</span><br />
+        por apenas <span class="text-green-400">R$ 25</span>
+      </h1>
+      
+      <p class="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
+        Acesse mais de 20.000 canais, Netflix, Amazon Prime, Disney+ e todos os jogos de futebol ao vivo. Sem mensalidade absurda, sem travamentos.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+        <button onclick="handleWhatsAppContact()" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-semibold rounded transition-all duration-300 transform hover:scale-105 flex items-center">
+          ▶ Assinar Agora
+        </button>
+        <button class="border border-white text-white hover:bg-white hover:text-black px-8 py-4 text-lg rounded transition-all duration-300 flex items-center">
+          🎬 Ver Demonstração
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black py-12 border-t border-gray-800">
+    <div class="container mx-auto px-4 text-center">
+      <div class="flex items-center justify-center space-x-2 mb-6">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <rect x="2" y="7" width="20" height="15" rx="2" ry="2"/>
+          <line x1="8" y1="2" x2="16" y2="2"/>
+          <line x1="12" y1="2" x2="12" y2="7"/>
+        </svg>
+        <span class="text-2xl font-bold text-white">StreamMax</span>
+      </div>
+      <p class="text-gray-400 mb-6">A melhor experiência de IPTV e Streaming do Brasil</p>
+      <button onclick="handleWhatsAppContact()" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded flex items-center mx-auto">
+        📱 Entre em Contato
+      </button>
+      <p class="text-xs text-gray-500 mt-6">© 2024 StreamMax. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Script WhatsApp -->
+  <script>
+    function handleWhatsAppContact() {
+      const message = "Olá! Gostaria de saber mais sobre os planos de IPTV e Streaming.";
+      const whatsappUrl = `https://wa.me/5575981813929?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
