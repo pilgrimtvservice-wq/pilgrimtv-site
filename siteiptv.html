@@ -3,8 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StreamMax - IPTV & Streaming</title>
+  <title>PilgimTV - IPTV & Streaming</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .gradient-text {
+      background: linear-gradient(to right, #44efb9, #22c5bd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .feature-card:hover, .plan-card:hover, .device-card:hover, .app-card:hover, .gallery-card:hover {
+      transform: translateY(-4px);
+      transition: all 0.3s ease;
+    }
+  </style>
 </head>
 <body class="bg-black text-white">
 
@@ -12,42 +23,47 @@
   <header class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <div class="flex items-center space-x-2">
-        <!-- Ícone TV -->
         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <rect x="2" y="7" width="20" height="15" rx="2" ry="2"/>
           <line x1="8" y1="2" x2="16" y2="2"/>
           <line x1="12" y1="2" x2="12" y2="7"/>
         </svg>
-        <span class="text-2xl font-bold text-white">StreamMax</span>
+        <span class="text-2xl font-bold text-white">PilgrimTV</span>
       </div>
       <button onclick="handleWhatsAppContact()" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded flex items-center">
-        <!-- Ícone WhatsApp -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path d="M21.6 12.1c0-5.3-4.3-9.6-9.6-9.6S2.4 6.8 2.4 12.1c0 1.7.5 3.4 1.4 4.8L2 22l5.2-1.7c1.4.9 3.1 1.4 4.8 1.4 5.3 0 9.6-4.3 9.6-9.6z"/>
-        </svg>
-        Contato
+        <span class="mr-2">📲</span> Contratar via Whatsapp
       </button>
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
     <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1601944179066-29786cb9d32a');">
       <div class="absolute inset-0 bg-black/70"></div>
     </div>
-
     <div class="relative z-10 container mx-auto px-4 text-center">
       <span class="mb-6 inline-block bg-red-600 text-white px-4 py-1 rounded">🔥 Oferta Especial - Economize até 50%</span>
-      
       <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-        Todos os Canais e <span class="text-red-500">Streaming</span><br />
+        Todos os Canais e <span class="gradient-text">Streaming</span><br />
         por apenas <span class="text-green-400">R$ 25</span>
       </h1>
-      
       <p class="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
-        Acesse mais de 20.000 canais, Netflix, Amazon Prime, Disney+ e todos os jogos de futebol ao vivo. Sem mensalidade absurda, sem travamentos.
+        📺 Transforme Sua TV em um Entretenimento Ilimitado – Agora!
+        Mais de 20.000 conteudos, filmes, séries e jogos de futebol ao vivo, tudo em HD e 4K, direto do conforto da sua casa.
+
+        💬 Assine Agora por apenas R$25/mês
+
+        ⚡ Vagas Limitadas! Sem travamentos, sem fidelidade e com suporte 24h. Aproveite a melhor experiência de IPTV do Brasil!
+
+        ✅ Mais de 50.000 canais nacionais e internacionais
+        ✅ Filmes, séries e esportes em alta qualidade (HD/4K)
+        ✅ Multi-telas: TV, smartphone, tablet e computador
+        ✅ Instalação rápida e gratuita
+        ✅ Suporte técnico 24h, todos os dias
+
+        ⚡ Atualizações constantes com conteúdo novo todo dia
+        ⏱️ Oferta por tempo limitado – garanta antes que acabe!
       </p>
-      
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
         <button onclick="handleWhatsAppContact()" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-semibold rounded transition-all duration-300 transform hover:scale-105 flex items-center">
           ▶ Assinar Agora
@@ -55,6 +71,138 @@
         <button class="border border-white text-white hover:bg-white hover:text-black px-8 py-4 text-lg rounded transition-all duration-300 flex items-center">
           🎬 Ver Demonstração
         </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-20 bg-black relative">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-16">Por que escolher o <span class="gradient-text">PilgrimTV?</span></h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="feature-card p-8 bg-gray-900 rounded-2xl border border-gray-800 text-center">
+          <div class="text-red-500 mb-4 text-5xl">⚡</div>
+          <h3 class="text-xl font-bold mb-4">Streaming Rápido</h3>
+          <p class="text-gray-400">Sem travamentos, com servidores de última geração para garantir fluidez máxima.</p>
+        </div>
+        <div class="feature-card p-8 bg-gray-900 rounded-2xl border border-gray-800 text-center">
+          <div class="text-red-500 mb-4 text-5xl">📺</div>
+          <h3 class="text-xl font-bold mb-4">+20.000 Conteudos</h3>
+          <p class="text-gray-400">Todos os canais do Brasil e do mundo, incluindo esportes, filmes e séries.</p>
+        </div>
+        <div class="feature-card p-8 bg-gray-900 rounded-2xl border border-gray-800 text-center">
+          <div class="text-red-500 mb-4 text-5xl">💻</div>
+          <h3 class="text-xl font-bold mb-4">Multi-dispositivos</h3>
+          <p class="text-gray-400">Assista no celular, smart TV, computador ou tablet sem complicação.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Devices -->
+  <section class="py-20 bg-gray-950">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-16">Compatível com <span class="gradient-text">Todos os Dispositivos</span></h2>
+      <div class="grid md:grid-cols-4 gap-8 text-center">
+        <div class="device-card bg-gray-900 p-6 rounded-2xl border border-gray-800">
+          <div class="text-5xl mb-4">📱</div>
+          <p>Smartphones Android e IOS</p>
+        </div>
+        <div class="device-card bg-gray-900 p-6 rounded-2xl border border-gray-800">
+          <div class="text-5xl mb-4">💻</div>
+          <p>Computadores e Notbook</p>
+        </div>
+        <div class="device-card bg-gray-900 p-6 rounded-2xl border border-gray-800">
+          <div class="text-5xl mb-4">📺</div>
+          <p>Smart TV, Andoid TV e ROKU TV</p>
+        </div>
+        <div class="device-card bg-gray-900 p-6 rounded-2xl border border-gray-800">
+          <div class="text-5xl mb-4">📟</div>
+          <p>TV Box e Fire Sticks</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apps -->
+  <section class="py-20 bg-black">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-16">Use com seus <span class="gradient-text">Apps Favoritos</span></h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="app-card bg-gray-900 p-8 rounded-2xl border border-gray-800">
+          <div class="text-5xl mb-4">📺</div>
+          <h3 class="text-xl font-bold">ASSIST PLUS</h3>
+        </div>
+        <div class="app-card bg-gray-900 p-8 rounded-2xl border border-gray-800">
+          <div class="text-5xl mb-4">🎬</div>
+          <h3 class="text-xl font-bold">XCLOUD</h3>
+        </div>
+        <div class="app-card bg-gray-900 p-8 rounded-2xl border border-gray-800">
+          <div class="text-5xl mb-4">▶</div>
+          <h3 class="text-xl font-bold">ECLIPSE PLAY</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="py-20 bg-gray-950">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-16">Conteúdo <span class="gradient-text">Exclusivo</span></h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="gallery-card overflow-hidden rounded-2xl border border-gray-800">
+          <img src="https://s2-ge.glbimg.com/NLsRrTcK-xhkHmFQe8bKQVQm5D0=/230x0:838x608/570x620/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/R/D/5leFNYQi6ziDz0eh7NCQ/carrossel-canais-whatsapp-home-1-.jpg" alt="Futebol" class="w-full h-64 object-cover"/>
+        </div>
+        <div class="gallery-card overflow-hidden rounded-2xl border border-gray-800">
+          <img src="https://wallpapers.com/images/high/horror-movie-collage-3795-x-2646-gzvt1v59yhar2ms1.webp" alt="Filmes" class="w-full h-64 object-cover"/>
+        </div>
+        <div class="gallery-card overflow-hidden rounded-2xl border border-gray-800">
+          <img src="https://pt.quizur.com/_image?href=https%3A%2F%2Fimg.quizur.com%2Ff%2Fimg5cdf60484bdb73.15248304.jpg%3FlastEdited%3D1558209885&w=600&h=600&f=webp" alt="Séries" class="w-full h-64 object-cover"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plans -->
+  <section class="py-20 bg-gray-950">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-16">Planos <span class="gradient-text">Exclusivos</span></h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="plan-card bg-gray-900 p-8 rounded-2xl border border-gray-800">
+          <h3 class="text-2xl font-bold mb-4">Mensal 1 Tela</h3>
+          <p class="text-4xl font-bold text-green-400 mb-6">R$ 24,99</p>
+          <ul class="text-gray-400 mb-6 space-y-2">
+            <li>✔ Todos os canais</li>
+            <li>✔ Filmes e séries</li>
+            <li>✔ Futebol ao vivo</li>
+            <li>✔ 24/7 Suporte</li>
+          </ul>
+          <button onclick="handleWhatsAppContact()" class="bg-red-600 hover:bg-red-700 text-white w-full py-3 rounded">Assinar</button>
+        </div>
+        <div class="plan-card bg-gray-900 p-8 rounded-2xl border border-gray-800">
+          <h3 class="text-2xl font-bold mb-4">Mensal 2 Telas</h3>
+          <p class="text-4xl font-bold text-green-400 mb-6">R$ 39,99</p>
+          <ul class="text-gray-400 mb-6 space-y-2">
+            <li>✔ 2 telas simutâneas</li>
+            <li>✔ Todos os canais</li>
+            <li>✔ Filmes e séries</li>
+            <li>✔ Futebol ao vivo</li>
+            <li>✔ 24/7 Suporte</li>
+          </ul>
+          <button onclick="handleWhatsAppContact()" class="bg-red-600 hover:bg-red-700 text-white w-full py-3 rounded">Assinar</button>
+        </div>
+        <div class="plan-card bg-gray-900 p-8 rounded-2xl border border-gray-800">
+          <h3 class="text-2xl font-bold mb-4">Familia 3 telas</h3>
+          <p class="text-4xl font-bold text-green-400 mb-6">R$ 54,99</p>
+          <ul class="text-gray-400 mb-6 space-y-2">
+            <li>✔ 3 telas simutâneas</li>
+            <li>✔ Todo os canais</li>
+            <li>✔ Filmes e séries</li>
+            <li>✔ Futebol ao vivo</li>
+            <li>✔ 24/7 Suporte</li>
+          </ul>
+          <button onclick="handleWhatsAppContact()" class="bg-red-600 hover:bg-red-700 text-white w-full py-3 rounded">Assinar</button>
+        </div>
       </div>
     </div>
   </section>
@@ -68,17 +216,17 @@
           <line x1="8" y1="2" x2="16" y2="2"/>
           <line x1="12" y1="2" x2="12" y2="7"/>
         </svg>
-        <span class="text-2xl font-bold text-white">StreamMax</span>
+        <span class="text-2xl font-bold text-white">Pilgrim TV</span>
       </div>
       <p class="text-gray-400 mb-6">A melhor experiência de IPTV e Streaming do Brasil</p>
       <button onclick="handleWhatsAppContact()" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded flex items-center mx-auto">
-        📱 Entre em Contato
+        📱 Contratar AGORA
       </button>
-      <p class="text-xs text-gray-500 mt-6">© 2024 StreamMax. Todos os direitos reservados.</p>
+      <p class="text-xs text-gray-500 mt-6">© 2024 Pilgrim TV. Todos os direitos reservados.</p>
     </div>
   </footer>
 
-  <!-- Script WhatsApp -->
+  <!-- Script -->
   <script>
     function handleWhatsAppContact() {
       const message = "Olá! Gostaria de saber mais sobre os planos de IPTV e Streaming.";
